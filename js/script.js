@@ -17,3 +17,8 @@ let automobili = [
 let benzina = automobili.filter(auto => auto.alimentazione === 'benzina');
 let diesel = automobili.filter(auto => auto.alimentazione === 'diesel');
 let altri = automobili.filter(auto => auto.alimentazione !== 'benzina' && auto.alimentazione !== 'diesel');
+
+// Stampa i risultati
+console.log('Auto a benzina:', benzina);
+console.log('Auto a diesel:', diesel);
+console.log('Altre auto:', altri);
