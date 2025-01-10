@@ -22,3 +22,13 @@ let altri = automobili.filter(auto => auto.alimentazione !== 'benzina' && auto.a
 console.log('Auto a benzina:', benzina);
 console.log('Auto a diesel:', diesel);
 console.log('Altre auto:', altri);
+
+// Array di stringhe
+let stringhe = ['laura', 'michela', 'maria'];
+
+// Formatta
+let stringheform = stringhe.map(str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase());
+
+// Stampa
+console.log(stringheform);
+
