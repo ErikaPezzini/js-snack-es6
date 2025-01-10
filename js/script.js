@@ -13,4 +13,7 @@ let automobili = [
     { marca: 'Fiat', modello: '500', alimentazione: 'metano' },
   ];
 
-  
+// Dividi le auto in 3 array
+let benzina = automobili.filter(auto => auto.alimentazione === 'benzina');
+let diesel = automobili.filter(auto => auto.alimentazione === 'diesel');
+let altri = automobili.filter(auto => auto.alimentazione !== 'benzina' && auto.alimentazione !== 'diesel');
