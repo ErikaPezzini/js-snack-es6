@@ -32,3 +32,17 @@ let stringheform = stringhe.map(str => str.charAt(0).toUpperCase() + str.slice(1
 // Stampa
 console.log(stringheform);
 
+// Array animali
+let animali = [
+    { nome: 'elefante', famiglia: 'elefanti', classe: 'mammiferi'},
+    { nome: 'aquila', famiglia: 'accipitridi', classe: 'uccelli'},
+    { nome: 'tigre', famiglia: 'felidi', classe: 'mammiferi'},
+    { nome: 'pinguino', famiglia: 'spheniscidae', classe: 'uccelli'},
+    { nome: 'delfino', famiglia: 'delphinidae', classe: 'mammiferi'},
+];
+
+// Nuovo array solo mammiferi
+let mammiferi = animali.filter(animale => animale.classe === 'mammiferi');
+
+// Stampa
+console.log(mammiferi);
