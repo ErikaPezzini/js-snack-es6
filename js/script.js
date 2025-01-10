@@ -46,3 +46,20 @@ let mammiferi = animali.filter(animale => animale.classe === 'mammiferi');
 
 // Stampa
 console.log(mammiferi);
+
+// Array di persone
+let persone = [
+    { nome: 'Mario', cognome: 'Rossi', età: '30'},
+    { nome: 'Giulia', cognome: 'Bolen', età: '59'},
+    { nome: 'Luca', cognome: 'Machiavelli', età: '17'},
+    { nome: 'Anna', cognome: 'Giusti', età: '10'},
+];
+
+// Nuovo array
+let frasi = persone.map(persona => {
+    let puòGuidare = persona.età >= 18 ? 'può guidare' : 'non può guidare';
+    return `${persona.nome} ${persona.cognome} ${puòGuidare}.`;
+});
+
+// Stampa
+console.log(frasi);
